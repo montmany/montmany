@@ -1,0 +1,41 @@
+name: Update Progress Tracker
+
+on:
+  push:
+    branches: [main]
+    paths: ["README.md"]
+  schedule:
+    - cron: "0 6 * * 1" # weekly, Monday 06:00 UTC — keeps Month/Next Launch fresh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-progress
+  cancel-in-progress: false
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update progress tracker
+        run: node scripts/update-progress.js
+
+      - name: Commit changes if any
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: auto-update progress tracker"
+          git push
