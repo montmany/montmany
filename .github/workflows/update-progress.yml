@@ -3,7 +3,7 @@ name: Update Progress Tracker
 on:
   push:
     branches: [main]
-    paths: ["README.md"]
+    paths: ["README.md", "data/projects.json"]
   schedule:
     - cron: "0 6 * * 1" # weekly, Monday 06:00 UTC — keeps Month/Next Launch fresh
   workflow_dispatch:
@@ -24,6 +24,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Update roadmap table
+        run: node scripts/update-roadmap.js
 
       - name: Update progress tracker
         run: node scripts/update-progress.js

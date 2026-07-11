@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const README_PATH = path.join(__dirname, "..", "README.md");
+const PROJECTS_PATH = path.join(__dirname, "..", "data", "projects.json");
 const TOTAL_APPS = 24;
 const TOTAL_MONTHS = 12;
 const CHALLENGE_START = new Date("2026-07-13T00:00:00Z");
@@ -9,9 +10,9 @@ const BAR_WIDTH = TOTAL_APPS;
 const START_MARKER = "<!-- PROGRESS:START -->";
 const END_MARKER = "<!-- PROGRESS:END -->";
 
-function countLiveApps(readme) {
-  const rows = readme.split("\n").filter((line) => /^\|\s*\d+\s*\|/.test(line));
-  return rows.filter((line) => line.includes("🟢 Live")).length;
+function countLiveApps() {
+  const projects = JSON.parse(fs.readFileSync(PROJECTS_PATH, "utf8"));
+  return projects.filter((project) => project.status === "live").length;
 }
 
 function buildBar(completed) {
@@ -65,7 +66,7 @@ function main() {
     process.exit(1);
   }
 
-  const completed = countLiveApps(readme);
+  const completed = countLiveApps();
   const block = buildBlock(completed);
 
   const before = readme.slice(0, startIdx + START_MARKER.length);

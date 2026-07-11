@@ -17,15 +17,13 @@ Documenting every launch, failure, and lesson in public — daily on Instagram/T
 ## 📊 Live Progress Tracker
 
 <!-- PROGRESS:START -->
-
-**Current Progress: `2 / 24` Apps Built**
+**Current Progress: `0 / 24` Apps Built**
 
 ```
-[██░░░░░░░░░░░░░░░░░░░░░░] 8%
+[░░░░░░░░░░░░░░░░░░░░░░░░] 0%
 ```
 
-`Month 1 of 12` · `Next Launch: 2026-08-12`
-
+`Month 1 of 12` · `Next Launch: 2026-07-13`
 <!-- PROGRESS:END -->
 
 ---
@@ -61,32 +59,38 @@ Aggregated stats across the entire 24-app ecosystem, updated as apps ship.
 
 ## 🗺️ The 24-App Roadmap
 
+Generated from [`data/projects.json`](data/projects.json) — run `node scripts/update-roadmap.js` after editing.
+
+<!-- ROADMAP:START -->
+
 | Month | App Name       | Description                                                                                         | Links & Status                                           |
-| ----- | -------------- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| 01    | **ShiftSync**  | Hospitality shift-scheduling tool for restaurant & hotel managers — auto-fills gaps, handles swaps. | 🟢 Live · [App Store] \| [Play Store] \| [Web] \| [Repo] |
-| 02    | **PulseTrack** | Minimalist fitness tracker focused on habit streaks and recovery, not vanity metrics.               | 🟢 Live · [App Store] \| [Play Store] \| [Repo]          |
-| 03    | **NearNook**   | Local discovery app surfacing under-the-radar cafes, events, and pop-ups by neighborhood.           | 🟡 In Development · [Web] \| [Repo]                      |
-| 04    | **TableTurn**  | Waitlist & table-management SaaS for independent restaurants without POS lock-in.                   | ⚪ Upcoming · [Repo]                                     |
-| 05    | **CrewBoard**  | Freelance crew coordination for event staffing — gigs, payouts, and availability in one place.      | ⚪ Upcoming · [Repo]                                     |
-| 06    | **LoopLedger** | Lightweight subscription & expense tracker for solo founders and indie hackers.                     | ⚪ Upcoming · [Repo]                                     |
-| 07    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 08    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 09    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 10    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 11    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 12    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 13    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 14    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 15    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 16    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 17    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 18    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 19    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 20    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 21    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 22    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 23    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
-| 24    | —              | Building in Public... 🛠️                                                                            | ⚪ Upcoming                                              |
+| ----- | -------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| 01    | **Delixya** | AI that trims ingredient costs and food waste for restaurants. | 🟡 In Development |
+| 02    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 03    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 04    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 05    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 06    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 07    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 08    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 09    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 10    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 11    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 12    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 13    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 14    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 15    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 16    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 17    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 18    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 19    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 20    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 21    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 22    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 23    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+| 24    | — | Building in Public... 🛠️ | ⚪ Upcoming |
+
+<!-- ROADMAP:END -->
 
 ---
 
