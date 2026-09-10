@@ -6,10 +6,8 @@
 
 ## 📣 Follow the Build
 
-Documenting every launch, failure, and lesson in public — daily on Instagram/TikTok/X.
+Documenting every launch, failure, and lesson in public — daily on X.
 
-[![Instagram](https://img.shields.io/badge/Instagram-@montmany__-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/montmany_)
-[![TikTok](https://img.shields.io/badge/TikTok-@montmany__-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://tiktok.com/@montmany_)
 [![X](https://img.shields.io/badge/X-@montmany__-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/montmany_)
 
 ---
